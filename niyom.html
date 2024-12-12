@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliate Program - নিয়ম</title>
+    <style>
+        /* Dark Theme Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Dark background */
+            color: #e0e0e0; /* Light text color */
+            overflow-x: hidden;
+            font-size: 16px; /* Mobile-friendly font size */
+        }
+
+        header {
+            background: linear-gradient(135deg, #4b0082, #1a1a2e); /* Deep dark gradient */
+            color: #ffffff;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Content Container */
+        .container {
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 30px;
+            background: linear-gradient(45deg, #1a1a2e, #3a3a5a, #121212); /* Huge dark gradient */
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.02); /* Slight scale effect on hover */
+        }
+
+        /* Product Styles */
+        .product {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #444;
+            padding: 15px 0;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .product:hover {
+            background-color: rgba(255, 255, 255, 0.05); /* Slight light background on hover */
+            transform: translateX(10px); /* Slide effect */
+        }
+
+        .product img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .product img:hover {
+            transform: rotate(5deg); /* Slight rotate effect */
+        }
+
+        .product-details {
+            flex-grow: 1;
+        }
+
+        .product-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .product-description {
+            font-size: 1rem;
+            color: #bbb;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #ff9800; /* Orange color for price */
+            background: linear-gradient(90deg, #ff9800, #ff5722); /* Price gradient effect */
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        /* Button Styles */
+        .button {
+            background: linear-gradient(135deg, #00bcd4, #960089); /* Button gradient */
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background: linear-gradient(135deg, #009688, #00bcd4);
+            transform: scale(1.05); /* Hover scale effect */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+        }
+
+        /* Niyom Button Styles */
+        .niyom {
+            background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Smooth gradient */
+            color: white;
+            padding: 12px 30px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border: 2px solid transparent;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Hover Effect */
+        .niyom:hover {
+            background: linear-gradient(45deg, #feb47b, #ff7e5f); /* Reversed gradient */
+            transform: scale(1.1); /* Slightly increase the size */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+        }
+
+        /* Active State (when clicked) */
+        .niyom:active {
+            transform: scale(1); /* Reset size */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Smaller shadow */
+        }
+
+        /* Focused (for accessibility) */
+        .niyom:focus {
+            outline: none;
+            border: 2px solid #ff7e5f; /* Highlight the button border */
+        }
+
+        /* Footer Styles */
+        footer {
+            background: linear-gradient(45deg, #121212, #1a1a2e, #3a3a5a); /* Dark footer gradient */
+            color: #bbb;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Hover Effect for Titles and Price */
+        .product-title:hover,
+        .product-price:hover {
+            color: #ff9800; /* Hover color for titles and price */
+            text-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
+        }
+
+        /* Gradient Scrollbar for Webkit Browsers */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, #ff5722, #ff9800); /* Gradient for scrollbar */
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #121212; /* Darker track for scrollbar */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Affiliate Program - নিয়ম</h1>
+</header>
+
+<div class="container">
+    <h2>Affiliate Program কীভাবে ব্যবহার করবেন?</h2>
+    <p>আপনি যখন আমাদের কোর্সের লিঙ্ক শেয়ার করবেন, তখন আপনি আমাদের এফিলিয়েট প্রোগ্রামে অংশ নিচ্ছেন। আপনি যদি কারও মাধ্যমে একটি কোর্স বিক্রি করেন, তবে আপনি ৫০% কমিশন পাবেন।</p>
+
+    <div class="instruction">
+        <h3>এফিলিয়েট লিঙ্ক শেয়ার করা:</h3>
+        <p>1. প্রথমে আপনার এফিলিয়েট লিঙ্কটি কপি করুন।<br>
+        2. তারপর সেই লিঙ্কটি আপনার বন্ধু বা সোশ্যাল মিডিয়াতে শেয়ার করুন।<br>
+        3. যাঁরা এই লিঙ্কটি ব্যবহার করে কোর্স ক্রয় করবেন, তাদের থেকে আপনি ৫০% কমিশন পাবেন।</p>
+    </div>
+
+    <div class="payment-info">
+        <h3>পেমেন্ট গ্রহণ:</h3>
+        <p>আপনি যে কমিশন পাবেন, তা নগদে সরাসরি ওই ব্যক্তির কাছ থেকে পাবেন যিনি আপনাকে এই কাজ করতে অফার দিয়েছেন।</p>
+    </div>
+</div>
+
+
+    <a href="index.html" class="niyom" target="_blank">Home</a>
+</div>
+
+
+</body>
+</html>
